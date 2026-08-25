@@ -1,0 +1,445 @@
+{
+  "config": {
+    "FirstBootHostname": "POS-IDSPBU",
+    "AutoStartIntervalSeconds": 300,
+    "WhitelistUpdateUrl": "https://1drv.ms/u/c/1e52ed43d283b07f/IQBcddSw5dvNR56GxtJ8AiXJAcPFqv4LQ_QW8MZ3Lz7tRjM?e=a5ERKN"
+  },
+
+  "firstboot": [
+    {
+      "Name": "GI5 Launcher",
+      "ExePath": "C:\\inetpub\\temp\\Login_Gi5.exe",
+      "Arguments": "",
+      "Description": "Verifikasi first boot",
+      "IconPath": "",
+      "Users": ["operational", "utility"],
+      "Enabled": true,
+      "SHA256": ""
+    }
+  ],
+
+  "autostart": [
+    {
+      "Name": "P-Insyst POS",
+      "ExePath": "C:\\P-Insyst\\POS\\P-Insyst.POS.exe",
+      "Arguments": "",
+      "Description": "Berjalan otomatis setiap boot",
+      "IconPath": "",
+      "Users": ["operational"],
+      "Enabled": true,
+      "SHA256": ""
+    },
+    {
+      "Name": "P-Insyst Printer Server",
+      "ExePath": "C:\\P-Insyst\\Printer Server\\P-Insyst.PrinterServer.exe",
+      "Arguments": "",
+      "Description": "Berjalan otomatis setiap boot",
+      "IconPath": "",
+      "Users": ["operational"],
+      "Enabled": true,
+      "SHA256": ""
+    },
+    {
+      "Name": "Service Monitor",
+      "ExePath": "C:\\Program Files (x86)\\ServiceMonitor\\Service Monitor.exe",
+      "Arguments": "",
+      "Description": "Berjalan otomatis setiap boot",
+      "IconPath": "",
+      "Users": ["operational"],
+      "Enabled": true,
+      "SHA256": ""
+    },
+    {
+      "Name": "App ImEx",
+      "ExePath": "C:\\P-Insyst\\ImEx\\ImExPOS.exe",
+      "Arguments": "",
+      "Description": "Berjalan otomatis setiap boot",
+      "IconPath": "",
+      "Users": ["operational"],
+      "Enabled": true,
+      "SHA256": ""
+    }
+  ],
+
+  "operational": {
+    "tabs": [
+      {
+        "TabName": "POS",
+        "Apps": [
+          {
+            "Name": "P-Insyst POS",
+            "ExePath": "C:\\P-Insyst\\POS\\P-Insyst.POS.exe",
+            "Arguments": "",
+            "Description": "P-Insyst POS",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "P-Insyst Printer Server",
+            "ExePath": "C:\\P-Insyst\\Printer Server\\P-Insyst.PrinterServer.exe",
+            "Arguments": "",
+            "Description": "Printer Server",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "P-Insyst Exporter",
+            "ExePath": "C:\\P-Insyst\\Exporter\\P-Insyst.Exporter.exe",
+            "Arguments": "",
+            "Description": "P-Insyst Exporter",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "Service Monitor",
+            "ExePath": "C:\\Program Files (x86)\\ServiceMonitor\\Service Monitor.exe",
+            "Arguments": "",
+            "Description": "Service Monitor",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "App ImEx",
+            "ExePath": "C:\\P-Insyst\\ImEx\\ImExPOS.exe",
+            "Arguments": "",
+            "Description": "App ImEx",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          }
+        ]
+      },
+      {
+        "TabName": "Tools",
+        "Apps": [
+          {
+            "Name": "TeamViewer",
+            "ExePath": "C:\\Program Files\\TeamViewer\\TeamViewer.exe",
+            "Arguments": "",
+            "Description": "TeamViewer",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "CiscoDeploymentTool-V.1",
+            "ExePath": "C:\\Documents\\CiscoDeploymentTool-V.1\\CiscoDeploymentTool.exe",
+            "Arguments": "",
+            "Description": "CiscoDeploymentTool-V.1",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "WinBox",
+            "ExePath": "C:\\Documents\\WinBox.exe",
+            "Arguments": "",
+            "Description": "WinBox",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "Device Manager",
+            "ExePath": "C:\\Windows\\System32\\mmc.exe",
+            "Arguments": "devmgmt.msc",
+            "Description": "Device Manager",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          }
+        ]
+      }
+    ]
+  },
+
+  "utility": {
+    "tabs": [
+      {
+        "TabName": "Agent Tools",
+        "Apps": [
+          {
+            "Name": "S2RE Agent Reconfig",
+            "ExePath": "C:\\ProgramData\\ElevationLauncher\\APP\\s2reagent_reconfig.exe",
+            "Arguments": "",
+            "Description": "Versi 1.0.0.0",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "S2RE Agent Toolkit",
+            "ExePath": "C:\\ProgramData\\ElevationLauncher\\APP\\S2RE_Agent_Toolkit.exe",
+            "Arguments": "",
+            "Description": "Versi 1.0.0.0",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "Agent Reconfigurator",
+            "ExePath": "C:\\ProgramData\\ElevationLauncher\\APP\\AgentReconfigurator.exe",
+            "Arguments": "",
+            "Description": "Agent Reconfigurator Versi 1.0.1.0",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "Ms Manager",
+            "ExePath": "C:\\ProgramData\\ElevationLauncher\\APP\\MsManager.exe",
+            "Arguments": "",
+            "Description": "Ms Manager",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          }
+        ]
+      }
+    ]
+  },
+
+  "pertare": {
+    "tabs": [
+      {
+        "TabName": "ImEx",
+        "Apps": [
+          {
+            "Name": "App ImEx",
+            "ExePath": "C:\\P-Insyst\\ImEx\\ImExPOS.exe",
+            "Arguments": "",
+            "Description": "App ImEx",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "ImEx 2.2.6",
+            "ExePath": "C:\\Users\\Pertare\\Desktop\\6.P-Insyst-PTPR-Setup-v2.2.6.exe",
+            "Arguments": "",
+            "Description": "Install ImEx v2.2.6",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "ImEx 2.2.13",
+            "ExePath": "C:\\Users\\Pertare\\Desktop\\6.P-Insyst-PTPR-Setup-v-TAC2.2.13.exe",
+            "Arguments": "",
+            "Description": "Install ImEx v2.2.13",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "Uninstall ImEx",
+            "ExePath": "C:\\P-Insyst\\ImEx\\unins000.exe",
+            "Arguments": "",
+            "Description": "Uninstall ImEx",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          },
+          {
+            "Name": "Update Tanggal ImEx",
+            "ExePath": "C:\\Windows\\System32\\cmd.exe",
+            "Arguments": "/c \"C:\\P-Insyst\\ImEx\\update_views.bat\"",
+            "Description": "Update tanggal ImEx",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          }
+        ]
+      },
+      {
+        "TabName": "Tools",
+        "Apps": [
+          {
+            "Name": "Ms Manager",
+            "ExePath": "C:\\ProgramData\\ElevationLauncher\\APP\\MsManager.exe",
+            "Arguments": "",
+            "Description": "Ms Manager",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          }
+        ]
+      }
+    ]
+  },
+
+  "administrator": {
+    "tabs": [
+      {
+        "TabName": "Tools",
+        "Apps": [
+          {
+            "Name": "Notepad",
+            "ExePath": "C:\\Windows\\System32\\notepad.exe",
+            "Arguments": "",
+            "Description": "Notepad",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          }
+        ]
+      }
+    ]
+  },
+
+  "tasks_pertare": [
+    {
+      "Name": "P-Insyst POS",
+      "ProcessName": "P-Insyst.POS",
+      "Description": "Running di session operational",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\POS\\P-Insyst.POS.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "P-Insyst Printer Server",
+      "ProcessName": "P-Insyst.PrinterServer",
+      "Description": "Running di session operational",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\Printer Server\\P-Insyst.PrinterServer.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "App ImEx",
+      "ProcessName": "ImExPOS",
+      "Description": "Running di session operational",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\ImEx\\ImExPOS.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "Service Monitor",
+      "ProcessName": "Service Monitor",
+      "Description": "Running di session operational",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\Program Files (x86)\\ServiceMonitor\\Service Monitor.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    }
+  ],
+
+  "tasks_operational": [
+    {
+      "Name": "P-Insyst POS",
+      "ProcessName": "P-Insyst.POS",
+      "Description": "P-Insyst POS",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\POS\\P-Insyst.POS.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "P-Insyst Printer Server",
+      "ProcessName": "P-Insyst.PrinterServer",
+      "Description": "Printer Server",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\Printer Server\\P-Insyst.PrinterServer.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "P-Insyst Exporter",
+      "ProcessName": "P-Insyst.Exporter",
+      "Description": "P-Insyst Exporter",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\Exporter\\P-Insyst.Exporter.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "App ImEx",
+      "ProcessName": "ImExPOS",
+      "Description": "App ImEx",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\ImEx\\ImExPOS.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "Service Monitor",
+      "ProcessName": "Service Monitor",
+      "Description": "Service Monitor",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\Program Files (x86)\\ServiceMonitor\\Service Monitor.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    }
+  ],
+
+  "tasks_utility": [
+    {
+      "Name": "P-Insyst POS",
+      "ProcessName": "P-Insyst.POS",
+      "Description": "P-Insyst POS",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\POS\\P-Insyst.POS.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "Ms Manager",
+      "ProcessName": "MsManager",
+      "Description": "Ms Manager",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\ProgramData\\ElevationLauncher\\APP\\MsManager.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    }
+  ],
+
+  "_default": [
+    {
+      "Name": "Notepad",
+      "ExePath": "C:\\Windows\\System32\\notepad.exe",
+      "Arguments": "",
+      "Description": "Tersedia untuk semua user yang tidak terdaftar",
+      "IconPath": "",
+      "Users": [],
+      "Enabled": true,
+      "SHA256": ""
+    }
+  ]
+}
