@@ -166,6 +166,80 @@
     ]
   },
 
+  "services_operational": [
+    {
+      "Name": "P-Insyst POS Service",
+      "ServiceName": "ganti_dengan_nama_service",
+      "Description": "Service utama P-Insyst POS",
+      "AllowStop": true,
+      "AllowStart": true,
+      "AllowRestart": true,
+      "Enabled": true
+    },
+    {
+      "Name": "P-Insyst Printer Server Service",
+      "ServiceName": "ganti_dengan_nama_service",
+      "Description": "Service Printer Server",
+      "AllowStop": true,
+      "AllowStart": true,
+      "AllowRestart": true,
+      "Enabled": true
+    }
+  ],
+
+  "tasks_operational": [
+    {
+      "Name": "P-Insyst POS",
+      "ProcessName": "P-Insyst.POS",
+      "Description": "P-Insyst POS",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\POS\\P-Insyst.POS.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "P-Insyst Printer Server",
+      "ProcessName": "P-Insyst.PrinterServer",
+      "Description": "Printer Server",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\Printer Server\\P-Insyst.PrinterServer.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "P-Insyst Exporter",
+      "ProcessName": "P-Insyst.Exporter",
+      "Description": "P-Insyst Exporter",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\Exporter\\P-Insyst.Exporter.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "App ImEx",
+      "ProcessName": "ImExPOS",
+      "Description": "App ImEx",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\ImEx\\ImExPOS.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "Service Monitor",
+      "ProcessName": "Service Monitor",
+      "Description": "Service Monitor",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\Program Files (x86)\\ServiceMonitor\\Service Monitor.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    }
+  ],
+
   "utility": {
     "tabs": [
       {
@@ -215,6 +289,41 @@
       }
     ]
   },
+
+  "services_utility": [
+    {
+      "Name": "P-Insyst POS Service",
+      "ServiceName": "ganti_dengan_nama_service",
+      "Description": "Service utama P-Insyst POS",
+      "AllowStop": true,
+      "AllowStart": true,
+      "AllowRestart": true,
+      "Enabled": true
+    }
+  ],
+
+  "tasks_utility": [
+    {
+      "Name": "P-Insyst POS",
+      "ProcessName": "P-Insyst.POS",
+      "Description": "P-Insyst POS",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\P-Insyst\\POS\\P-Insyst.POS.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    },
+    {
+      "Name": "Ms Manager",
+      "ProcessName": "MsManager",
+      "Description": "Ms Manager",
+      "AllowKill": true,
+      "AllowRestart": true,
+      "RestartExePath": "C:\\ProgramData\\ElevationLauncher\\APP\\MsManager.exe",
+      "RestartArguments": "",
+      "Enabled": true
+    }
+  ],
 
   "pertare": {
     "tabs": [
@@ -291,26 +400,6 @@
     ]
   },
 
-  "administrator": {
-    "tabs": [
-      {
-        "TabName": "Tools",
-        "Apps": [
-          {
-            "Name": "Notepad",
-            "ExePath": "C:\\Windows\\System32\\notepad.exe",
-            "Arguments": "",
-            "Description": "Notepad",
-            "IconPath": "",
-            "Users": [],
-            "Enabled": true,
-            "SHA256": ""
-          }
-        ]
-      }
-    ]
-  },
-
   "tasks_pertare": [
     {
       "Name": "P-Insyst POS",
@@ -354,81 +443,25 @@
     }
   ],
 
-  "tasks_operational": [
-    {
-      "Name": "P-Insyst POS",
-      "ProcessName": "P-Insyst.POS",
-      "Description": "P-Insyst POS",
-      "AllowKill": true,
-      "AllowRestart": true,
-      "RestartExePath": "C:\\P-Insyst\\POS\\P-Insyst.POS.exe",
-      "RestartArguments": "",
-      "Enabled": true
-    },
-    {
-      "Name": "P-Insyst Printer Server",
-      "ProcessName": "P-Insyst.PrinterServer",
-      "Description": "Printer Server",
-      "AllowKill": true,
-      "AllowRestart": true,
-      "RestartExePath": "C:\\P-Insyst\\Printer Server\\P-Insyst.PrinterServer.exe",
-      "RestartArguments": "",
-      "Enabled": true
-    },
-    {
-      "Name": "P-Insyst Exporter",
-      "ProcessName": "P-Insyst.Exporter",
-      "Description": "P-Insyst Exporter",
-      "AllowKill": true,
-      "AllowRestart": true,
-      "RestartExePath": "C:\\P-Insyst\\Exporter\\P-Insyst.Exporter.exe",
-      "RestartArguments": "",
-      "Enabled": true
-    },
-    {
-      "Name": "App ImEx",
-      "ProcessName": "ImExPOS",
-      "Description": "App ImEx",
-      "AllowKill": true,
-      "AllowRestart": true,
-      "RestartExePath": "C:\\P-Insyst\\ImEx\\ImExPOS.exe",
-      "RestartArguments": "",
-      "Enabled": true
-    },
-    {
-      "Name": "Service Monitor",
-      "ProcessName": "Service Monitor",
-      "Description": "Service Monitor",
-      "AllowKill": true,
-      "AllowRestart": true,
-      "RestartExePath": "C:\\Program Files (x86)\\ServiceMonitor\\Service Monitor.exe",
-      "RestartArguments": "",
-      "Enabled": true
-    }
-  ],
-
-  "tasks_utility": [
-    {
-      "Name": "P-Insyst POS",
-      "ProcessName": "P-Insyst.POS",
-      "Description": "P-Insyst POS",
-      "AllowKill": true,
-      "AllowRestart": true,
-      "RestartExePath": "C:\\P-Insyst\\POS\\P-Insyst.POS.exe",
-      "RestartArguments": "",
-      "Enabled": true
-    },
-    {
-      "Name": "Ms Manager",
-      "ProcessName": "MsManager",
-      "Description": "Ms Manager",
-      "AllowKill": true,
-      "AllowRestart": true,
-      "RestartExePath": "C:\\ProgramData\\ElevationLauncher\\APP\\MsManager.exe",
-      "RestartArguments": "",
-      "Enabled": true
-    }
-  ],
+  "administrator": {
+    "tabs": [
+      {
+        "TabName": "Tools",
+        "Apps": [
+          {
+            "Name": "Notepad",
+            "ExePath": "C:\\Windows\\System32\\notepad.exe",
+            "Arguments": "",
+            "Description": "Notepad",
+            "IconPath": "",
+            "Users": [],
+            "Enabled": true,
+            "SHA256": ""
+          }
+        ]
+      }
+    ]
+  },
 
   "_default": [
     {
