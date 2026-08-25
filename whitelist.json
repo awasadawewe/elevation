@@ -61,7 +61,7 @@
     }
   ],
 
-  "andri": {
+  "operational": {
     "tabs": [
       {
         "TabName": "POS",
@@ -166,7 +166,7 @@
     ]
   },
 
-  "services_andri": [
+  "services_operational": [
     {
       "Name": "P-Insyst POS Service",
       "ServiceName": "ganti_dengan_nama_service",
@@ -187,7 +187,7 @@
     }
   ],
 
-  "tasks_andri": [
+  "tasks_operational": [
     {
       "Name": "P-Insyst POS",
       "ProcessName": "P-Insyst.POS",
