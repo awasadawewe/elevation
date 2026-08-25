@@ -2,7 +2,7 @@
   "config": {
     "FirstBootHostname": "POS-IDSPBU",
     "AutoStartIntervalSeconds": 300,
-    "WhitelistUpdateUrl": "https://1drv.ms/u/c/1e52ed43d283b07f/IQBcddSw5dvNR56GxtJ8AiXJAcPFqv4LQ_QW8MZ3Lz7tRjM?e=a5ERKN"
+    "WhitelistUpdateUrl": "https://raw.githubusercontent.com/awasadawewe/elevation/refs/heads/main/whitelist.json"
   },
 
   "firstboot": [
